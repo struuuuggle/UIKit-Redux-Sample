@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SignUp_RxSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Type a name" translatesAutoresizingMaskIntoConstraints="NO" id="JAC-5G-z40">
+                                <rect key="frame" x="0.0" y="36" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UT7-QR-x4g">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="wjX-jU-vdb">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wjX-jU-vdb" id="3uQ-Xd-EBy">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UT7-QR-x4g" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7sY-xp-JqV"/>
+                            <constraint firstItem="UT7-QR-x4g" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Nej-n4-wed"/>
+                            <constraint firstItem="JAC-5G-z40" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="36" id="Uk6-e9-paS"/>
+                            <constraint firstItem="JAC-5G-z40" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eQJ-Wi-yEs"/>
+                            <constraint firstItem="UT7-QR-x4g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lWT-gR-rEp"/>
+                            <constraint firstItem="UT7-QR-x4g" firstAttribute="top" secondItem="JAC-5G-z40" secondAttribute="bottom" symbolic="YES" id="nAy-Sc-add"/>
+                            <constraint firstItem="JAC-5G-z40" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zB3-Fu-WBY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="JAC-5G-z40" id="xb2-IH-m9M"/>
+                        <outlet property="tableView" destination="UT7-QR-x4g" id="WFk-cJ-n7Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
+        </scene>
+    </scenes>
+</document>
